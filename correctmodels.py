@@ -4,7 +4,7 @@ import datetime
 ## 1. The name of your database here
 db = 'chukwuemekan'
 un = 'root' # likely root still
-pw = 'Explodinakachi85' # initially it was also root
+pw = 'explodinakachi85' # initially it was also root
 
 pg_db = PostgresqlDatabase(db, user=un, passwd=pw)
 
