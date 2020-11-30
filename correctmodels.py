@@ -24,7 +24,7 @@ class Science_organization(BaseModel):
         #lng = CharField(max_length=20)
 
         def __str__(self):
-                return str(self.org_id)
+                return str(self.org_name)
 
 
 class Statements(BaseModel):
@@ -38,9 +38,9 @@ class Statements(BaseModel):
     subtext_format       = CharField(max_length = 1000)
     image                = CharField(max_length = 500)
     image_accessibility  = CharField(max_length = 100)
-    has_action_plan      = CharField(max_length = 100)
+    has_action_plans      = CharField(max_length = 100)
     post_writer          = CharField(max_length = 1000)
-    org_id               = ForeignKeyField(Science_organization, backref = 'messages')
+    org_id               = ForeignKeyField(Science_organization, backref = 'statements')
 
     def __str__(self):
             return str(self.statements_id)
@@ -50,7 +50,7 @@ class Statements(BaseModel):
 ## and then .close() when the query is finished
 ## Make sure you save your result table!
 pg_db.connect()
-result = Stations.select()
+result = Statements.select()
 for r in result:
 	print(r)
 
