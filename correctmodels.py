@@ -5,7 +5,7 @@ db = 'chukwuemekan'
 un = 'root' # likely root still
 pw = 'Explodinakachi85' # initially it was also root
 
-pg_db = PostgresSQLDatabase(db, user=un, passwd=pw)
+pg_db = PostgresqlDatabase(db, user=un, passwd=pw)
 
 ## This is the Base class that Peewee uses to interact with the Postgres DB.
 ## Don't change it!
