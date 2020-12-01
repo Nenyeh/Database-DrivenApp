@@ -55,10 +55,10 @@ class Statements(BaseModel):
 ## CALL .connect() on your database whenever you want to execute a query,
 ## and then .close() when the query is finished
 ## Make sure you save your result table!
-pg_db.connect()
+#pg_db.connect()
 #result = Statements.select()
-result = Science_organization.select()
-for r in result:
-	print(r)
+#result = Science_organization.select()
+#for r in result:
+	#print(r)
 
-pg_db.close()
+#pg_db.close()
