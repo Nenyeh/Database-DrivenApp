@@ -46,7 +46,7 @@ class Statements(BaseModel):
     org_id               = ForeignKeyField(Science_organization, backref = 'statements')
 
     def __str__(self):
-            return str(self.statements_id)
+            return str(self.statement_id)
 
 
 ## CALL .connect() on your database whenever you want to execute a query,
