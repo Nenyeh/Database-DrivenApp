@@ -53,7 +53,8 @@ class Statements(BaseModel):
 ## and then .close() when the query is finished
 ## Make sure you save your result table!
 pg_db.connect()
-result = Statements.select()
+#result = Statements.select()
+result = Science_organization.select()
 for r in result:
 	print(r)
 
