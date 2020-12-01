@@ -31,8 +31,8 @@ class Science_organization(BaseModel):
 
 
 class Statements(BaseModel):
-    statements_id        = PrimaryKeyField()
-    statements_url       = CharField(max_length = 1000)
+    statement_id        = PrimaryKeyField()
+    statement_url       = CharField(max_length = 1000)
     date_posted          = DateTimeField(default=datetime.datetime.now)
     text                 = CharField(max_length = 5000)
     word_count           = IntegerField()
