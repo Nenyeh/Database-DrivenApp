@@ -6,6 +6,7 @@ db = 'chukwuemekan'
 un = 'chukwuemekan' # likely root still
 #pw = 'password' # initially it was also root
 
+introspector = Introspector.from_database(db)
 pg_db = PostgresqlDatabase(db, user=un)
 #pg_db = PostgresqlDatabase(host="localhost", user="CHUKWUEMEKAN", passwd="PASSWORD", database="CHUKWUEMEKAN")
 #pg_db = PostgresqlDatabase('chukwuemekan', user='chukwuemekan') #this works but does not work when you do from correctmodel import db
