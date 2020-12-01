@@ -2,12 +2,12 @@ from peewee import *
 import datetime
 
 ## 1. The name of your database here
-db = 'chukwuemekan'
-un = 'chukwuemekan' # likely root still
-pw = 'password' # initially it was also root
+#db = 'chukwuemekan'
+#un = 'root' # likely root still
+#pw = 'password' # initially it was also root
 
-pg_db = PostgresqlDatabase(db, user=un, passwd=pw)
-#pg_db = PostgresqlDatabase(user="ROOT", passwd="PASSWORD", dbname="CHUKWUEMEKAN")
+#pg_db = PostgresqlDatabase(db, user=un, passwd=pw)
+pg_db = PostgresqlDatabase(user="ROOT", passwd="PASSWORD", dbname="CHUKWUEMEKAN")
 
 ## This is the Base class that Peewee uses to interact with the Postgres DB.
 ## Don't change it!
