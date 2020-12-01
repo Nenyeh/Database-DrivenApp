@@ -7,7 +7,8 @@ import datetime
 #pw = 'password' # initially it was also root
 
 #pg_db = PostgresqlDatabase(db, user=un, passwd=pw)
-pg_db = PostgresqlDatabase(host="localhost", user="CHUKWUEMEKAN", passwd="PASSWORD", database="CHUKWUEMEKAN")
+#pg_db = PostgresqlDatabase(host="localhost", user="CHUKWUEMEKAN", passwd="PASSWORD", database="CHUKWUEMEKAN")
+pg_db = PostgresqlDatabase('chukwuemekan', user='root')
 
 ## This is the Base class that Peewee uses to interact with the Postgres DB.
 ## Don't change it!
